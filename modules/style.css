@@ -1,0 +1,1928 @@
+:root{
+    --primary-color:#FC0077;
+    --secondary-color:#150550;
+    --tertiary-color:rgb(255, 255, 255);
+    --button-color:#FC0077;
+    --mobile-:705px;
+    --black:#04032E;
+    --black2:var(rgba(0, 0, 0, 0.664));
+    --second-black:#020134;
+    --black3:#03023B;
+    --input-back:#7B1284;
+    --black-new:rgba(0, 0, 0, 0.548);
+}
+/* :root{
+    --primary-color:blue;
+    --secondary-color:blue;
+    --tertiary-color:rgb(255, 255, 255);
+    --button-color:blue;
+    --mobile-:705px;
+    --black:#000000;
+    --black2:var(rgba(0, 0, 0, 0.664));
+    --second-black:white;
+    --black3:blue;
+    --input-back:#7B1284;
+} */
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--black);
+}
+
+
+
+
+
+/* Animation Set Up */
+@keyframes float {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to{
+        opacity: 1;
+        transform: translateX(0);
+}}
+.firstdiv{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+/* Before Header */
+
+.beforeheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--secondary-color);
+}
+.beforeleft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--tertiary-color);
+    margin-left: 5px;
+}
+.beforeleft p{
+    margin-left: 5px;
+}
+.socialicon{
+    margin-left: 5px;
+}
+.beforeright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--tertiary-color);
+    margin-right: 5px;
+}
+.beforeright p{
+    margin-right: 5px;
+}
+.fa-user{
+    margin-right: 5px;
+}
+
+
+/* Main Header */
+
+.mainheader{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.headerleft h3{
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.headerright a{
+    color: var(--tertiary-color);
+    margin-left: 5px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.headerright a:hover{
+    color: var(--button-color);
+}
+.headerleft{
+    margin-left: 10px;
+}
+
+.cta{
+    background-color: var(--button-color);
+    color: var(--tertiary-color);
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border-radius: 10px; */
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 30px;
+}
+
+@media (max-width:705px){
+    .beforeheader{
+        right: 0;
+    }
+    .headerright{
+        display: none;
+    }
+}
+
+/* The First Division */
+
+.firstdiv{
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    /* height: 100vh; */
+    background-color: var(--black);
+    animation-name: float;
+    -webkit-animation-name: float;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    
+}
+
+.firstdivleft{
+    color: var(--tertiary-color);
+    margin-top: 200px;
+    margin-left: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.firstdivleft h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+.firstdivleft h3{
+    font-size:15px;
+}
+
+.firstcall{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    width: 30%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.firstcall:hover{
+    background-color: transparent;
+    border: 2px solid var(--tertiary-color);
+}
+.firstdivright{
+    width: 40%;
+    height: 80%;
+    margin-top: 60px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.firstdivright img{
+    width: 100%;
+    margin-top: 25px;
+}
+@media (max-width:705px){
+    .firstdiv{
+        display: block;
+        right: 0;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 150px;
+    }
+    .firstdivleft{
+        width: 90%;
+        margin: 0 5%;;
+    }
+    .firstdivright{
+        display: none;
+    }
+    .firstdivleft h1{
+        font-size: 30px;
+        margin: 0;
+    }
+    .firstcall{
+        margin-top: 25px;
+        width: 40%;
+        margin-left: 15px;
+        
+    }
+    .firstdiv img{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+}
+
+/* Second Division */
+
+.seconddiv{
+    position: absolute;
+    width: 100%;
+    /* background-color: var(--black); */
+    margin-top: 820px;
+    left: 0;
+    right: 0;
+   
+    padding-top: 35px; 
+    padding-bottom: 35px;
+   
+
+}
+.card{
+    width: 30%;
+    display: inline-block;
+    background-color: var(--black3);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card:hover{
+    box-shadow: 0 3px 12px    var(--primary-color);
+}
+.card:first-child{
+    margin-left: 40px;
+}
+
+.containersecond{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+.content1{
+    width: 80%;
+    margin: 23.468px;
+    display: inline-block;
+    align-items: center;
+}
+.content2{
+   margin-left: 8px;
+   display: inline-block;
+}
+.content2 h3{
+    font-size: 40px;
+    margin-bottom: 0;
+    color: var(--tertiary-color);
+    font-weight: bold; 
+    margin-left: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.content2 p{
+    color: var(--tertiary-color);
+    margin-top: 3px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width:705px){
+   .card{
+    width: 100%;
+    margin-top: 20px;
+   }
+   .card:first-child{
+    margin-left: 7px;
+}
+   .seconddiv{
+    margin-top: 860px;
+   }
+   
+
+}
+
+/* The Third Division */
+
+.thirddiv{
+    margin-top: 1100px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: var(--second-black);
+    padding: 15px;
+    visibility: hidden;
+}
+.activation{
+    visibility: visible;
+    animation-name: float;
+    -webkit-animation-name: float;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    margin-top: 1100px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: var(--black);
+    padding: 15px;
+    
+}
+.aboutdescription{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.aboutdescription h1{
+    text-align: center;
+    color: var(--tertiary-color);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.aboutdescription p{
+    text-align: justify;
+    color: var(--tertiary-color);
+    margin-top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cardscontainer{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 50px;
+}
+.cards{
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 40px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    padding:15px;
+    border-radius: 10px;
+    margin-left: 40px;
+
+}
+.profile{
+    width: 15%;
+    display: inline-block;
+}
+.profile img{
+    width: 100%;
+}
+.abouttexts{
+    display: inline-block;
+    margin-left: 8px;
+    text-align: left;
+}
+.abouttexts h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.abouttexts p{
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+}
+.x img{
+    border-radius: 50%;
+}
+
+
+@media(max-width:705px){
+    .card{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card .content1.content2{
+        float: left;
+        width: 45%;
+    }
+    .thirddiv, .activation{
+        margin-top: 1550px;
+    }
+    
+    .aboutdescription{
+        margin: 0 5%;
+        width: 90%;
+    }
+    .cardscontainer{
+        margin: 0;
+        width: 100%;
+        margin-top: 35px;
+
+    }
+    .cards{
+        width: 80%;
+        margin: 0 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .aboutdescription h1{
+        font-size: 30px;
+    }
+    .aboutdescription p{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+   and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .cards{
+        width: 45%;
+        display: inline-block;
+        margin-bottom: 40px;
+        border: 2px solid var(--secondary-color);
+        background-color: var(--secondary-color);
+        padding:15px;
+        border-radius: 10px;
+        margin-left: 40px;
+
+    }
+    .thirddiv{
+        margin-top: 1100px;
+    }
+    .activation{
+        margin-top: 1100px;
+    }
+    .cardscontainer{
+        margin: 0;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .seconddiv{
+        margin-top: 800px;
+    }
+    .firstdivright img{
+        height: 50%;
+    }
+}
+
+/* The Fourth Division */
+
+.fourthdiv{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--black);
+    margin-top: 2000px;
+}
+.pricecard{
+
+    
+    width: 30%;
+
+    background-image: url('images/card-back.gif')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+}
+.first{
+    margin:0 auto;
+    width: 80%;
+}
+.first h2{
+    color: var(--tertiary-color);
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.first p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--tertiary-color);
+}
+.percent{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 5px;
+}
+.second{
+    margin-top: 50px;
+}
+#features{
+    color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 2px dotted var(--tertiary-color);
+    border-collapse: collapse;
+    
+}
+#features td{
+    border: 2px dotted var(--tertiary-color);
+    padding: 20px;
+}
+.investnow{
+  padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    width: 100%;
+    border-radius: 5px;
+}
+.investnow:hover{
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+}
+.third{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 40%;
+}
+
+@media (max-width:705px){
+    .fourthdiv{
+        margin-top: 3500px;
+
+    }
+    .pricecard{
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 20px;
+        
+    }
+    .third{
+        margin: 0 ;
+        width: 90%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .investnow{
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+
+/* The Fifth Division */
+
+.fifthdiv{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 3300px;
+    background-color: var(--black);
+}
+.boxcontainer{
+    width: 90%;
+    margin: 0 auto;
+}
+.how-to-box{
+    
+    margin-left: 30px;
+    width: 30%;
+    display: inline-block;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.how-to-icon{
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 50px;
+}
+.how-to-icon img{
+    width: 100%;
+    border-radius: 50%;
+}
+.how-to-content1{
+    margin: 0 auto;
+    width: 80%;
+    color: var(--tertiary-color);
+    text-align: center;
+}
+.how-to-content1 h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.number{
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+.how-to-content1 p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media screen and (max-width:705px)
+{
+    .fifthdiv{
+        margin-top: 6400px;
+    }
+    .boxcontainer{
+        margin: 0;
+        width: 100%;
+    }
+    .how-to-box{
+        width: 80%;
+        margin: 0 10%;
+        margin-top: 20px;
+    }
+    
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+   and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2){
+
+     .boxcontainer{
+        margin: 0;
+        width: 100%;
+    }
+    .how-to-box{
+        width: 80%;
+        margin: 0 10%;
+        margin-top: 20px;
+    }
+    .fifthdiv{
+        margin-top: 3200px;
+    }
+    }
+  
+
+  /* The Sixth Division */
+
+.sixthdiv{
+    position: absolute;
+    margin-top:4100px;
+    background-color: var(--black3);
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.paymentsupdate{
+    margin-left: 50px;
+    text-align: left;
+}
+.paymentsupdate h1{
+    color: var(--tertiary-color);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.paymentsupdate p{
+    color: var(--tertiary-color);
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttonscontainer{
+    margin-left: 50px;
+}
+.lastdeposit{
+    /* background-color: var(--primary-color); */
+    border: 2px solid var(--tertiary-color);
+    background-color: transparent;
+    outline: none;
+    color: var(--tertiary-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.lastwithdrawal{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    outline: none;
+    color: var(--primary-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.paymentsupdateleft{
+    width: 50%;
+    margin-left: 50px;
+    overflow-x: hidden;
+    display: inline-block;
+    margin-top: 25px;
+    z-index: 2;
+    
+}
+.paymentsupdateright{
+   position: absolute;
+   top: -100px;
+   left: 750px;
+   width: 90%;
+
+   
+   
+}
+.paymentsupdateright img{
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+   
+}
+#topwithdrawals{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--tertiary-color);
+    margin-top: 10px;
+    display: block;
+
+}
+#topwithdrawals tr{
+    background-color: var(--black);
+}
+#topwithdrawals tr:nth-child(even){
+    background-color: var(--secondary-color);
+}
+#topwithdrawals td, #topwithdrawals th{
+    padding: 10px;
+    
+}
+
+/* The second Table */
+
+#topdeposits{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--tertiary-color);
+    margin-top: 10px;
+    /* transform: translateY(-50px); */
+    display: none;
+   
+
+}
+#topdeposits tr{
+    background-color: var(--black);
+}
+#topdeposits tr:nth-child(even){
+    background-color: var(--secondary-color);
+}
+#topdeposits td, #topdeposits th{
+    padding: 10px;
+    
+}
+
+@media screen and (max-width:705px){
+    .paymentsupdateleft{
+        width: 80%;
+        margin:0 10%;
+        overflow-x: scroll;
+        display: inline-block;
+        margin-top: 25px;
+       
+        
+    }
+    .paymentsupdateright{
+        display: none;
+    }
+    .sixthdiv{
+        position: absolute;
+        margin-top:8100px;
+        background-color: var(--black3);
+        width: 100%;
+        left: 0;
+        overflow: hidden;
+    }
+    .buttonscontainer{
+        width: 80%;
+        margin: 0 10%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+}@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+ and (min-device-width: 834px) 
+and (max-device-width: 1112px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .sixthdiv{
+        margin-top: 5300px;
+    }
+    .paymentsupdateleft{
+        width: 80%;
+        margin:0 10%;
+        overflow-x: scroll;
+        display: inline-block;
+        margin-top: 25px;
+        z-index: 1;
+       
+        
+    }
+    .paymentsupdateright{
+        position: absolute;
+        top: 200px;
+        left: 700px;
+        width: 90%;
+     
+        
+        
+     }
+     .paymentsupdateright img{
+         width: 100%;
+         display: block;
+         transform: rotateY('180deg');
+        
+     }
+}
+
+/* The Seventh Division */
+
+.seventhdiv{
+    margin-top: 2700px;
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-bottom: 30px;
+}
+.seventhleft{
+    width: 40%;
+    margin-left: 50px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+.seventhleft h1{
+    color: var(--tertiary-color);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+.seventhleft p{
+     color: var(--tertiary-color);
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.seventhright{
+    width: 40%;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: block;
+    margin-top: 20px; 
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    
+}
+.calculatortopright, .calculatortopleft{
+    display: inline-block;
+    width: 40%;
+    
+}
+.calculatortopright{
+    margin-left: 20px;
+}
+#profitcalculator{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+#selectplan{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--input-back);
+    color: var(--tertiary-color);
+    border: 0;
+}
+label{
+    color: var(--tertiary-color);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+#investamount{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--input-back);
+    color: var(--tertiary-color);
+    border: 0;
+
+}
+#profitamount{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--input-back);
+    color: var(--tertiary-color);
+    border: 0;
+}
+#profitamount::placeholder, #investamount::placeholder{
+    color: var(--tertiary-color);
+}
+#calculate{
+    width: 50%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    background-color: var(--input-back);
+    color: var(--tertiary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.warning1{
+    width:60% ;
+    border-left: 5px solid red;
+    background-color: rgba(255, 0, 0, 0);
+}
+.warning1 p{
+    color: red;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.allowed{
+    width:60% ;
+    border-left: 5px solid green;
+    background-color: rgba(255, 0, 0, 0); 
+}
+.allowed p{
+   
+        color:green;
+        text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 10px;
+        font-weight: bold;
+   
+}
+
+
+@media(max-width:705px){
+    .card{
+        display: flex;
+        justify-content: space-around;
+    }
+    .seventhdiv{
+        margin-top: 5200px;
+    }
+    .seventhleft{
+        width: 80%;
+        float: none;
+        display: block;
+        margin: 0 10%;
+    }
+    .seventhright{
+           width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: block;
+    margin-top: 20px; 
+    float: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: block;
+    }
+    .seventhleft h1{
+    color: var(--tertiary-color);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  .calculatortopright, .calculatortopleft{
+    display: block;
+    width: 100%;
+    
+}
+.calculatortopright{
+    margin-left: 0;
+}
+#mobileremove{
+    display: none;
+}
+#calculate{
+width: 80%;
+}
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+   and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .seventhdiv{
+        margin-top: 2500px;
+    }
+    .mobilehero{
+        display: none;
+    }
+    }
+
+
+        /* ----------- Non-Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    .mobilehero{
+        display: none;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) { 
+    .mobilehero{
+        display: none;
+    }
+}
+
+
+
+
+
+/* Responsiveness for Ipad */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .mobilehero{
+        display: none;
+    }
+    .headerright{
+        display: none;
+    }
+    .firstdivright img{
+    width: 100%;}
+    .firstdivleft{
+        margin-top: 100px;
+    }
+    .firstdivright{
+        width: 40%;
+    }
+    .seconddiv{
+        margin-top: 600px;
+
+    }
+    .containersecond{
+        margin:  0 5%;
+        width: 90%;
+    }
+    .thirddiv, .activation{
+        margin-top: 900px;
+    }
+    .cardscontainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        
+    }
+    .cards{
+        margin-bottom: 10px;
+        width: 40%;
+        margin-left: 10%;
+        /* display: inline-block; */
+        /* float: left;
+        margin-top: ; */
+    }
+    .fourthdiv{
+        margin-top: 1500px;
+    }
+    .pricecard{
+        margin-left: 15px;
+    }
+    .third{
+        margin: 0;
+        margin-left: 20%;
+        width: 80%;
+        margin-top: 30px;
+
+    }
+    .first h2{
+        font-size: 20px;
+    }
+    span.percent{
+        font-size: 30px;
+    }
+    a.investnow{
+        width: 100%;
+    }
+    .seventhdiv{
+        margin-top: 2200px;
+    }
+    .seventhleft, .seventhright{
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    .seventhleft h1{
+        text-align: center;
+    }
+    .seventhleft p{
+        text-align: justify;
+    }
+    .seventhright{
+        margin-top: 10px;
+    }
+    .boxcontainer{
+        width: 100%;
+        display: block;
+    }
+    .how-to-box{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .sixthdiv{
+        margin-top: 4800px;
+    }
+    .paymentsupdateleft{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mobilehero{
+        display: none;
+    }
+    .headerright{
+        display: none;
+    }
+    .firstdivright img{
+    width: 100%;}
+    .firstdivleft{
+        margin-top: 100px;
+    }
+    .firstdivright{
+        width: 40%;
+    }
+    .seconddiv{
+        margin-top: 600px;
+
+    }
+    .containersecond{
+        margin:  0 5%;
+        width: 90%;
+    }
+    .thirddiv, .activation{
+        margin-top: 900px;
+    }
+    .cardscontainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        
+    }
+    .cards{
+        margin-bottom: 10px;
+        width: 40%;
+        margin-left: 10%;
+        /* display: inline-block; */
+        /* float: left;
+        margin-top: ; */
+    }
+    .fourthdiv{
+        margin-top: 1500px;
+    }
+    .pricecard{
+        margin-left: 15px;
+    }
+    .third{
+        margin: 0;
+        margin-left: 20%;
+        width: 80%;
+        margin-top: 30px;
+
+    }
+    .first h2{
+        font-size: 20px;
+    }
+    span.percent{
+        font-size: 30px;
+    }
+    a.investnow{
+        width: 100%;
+    }
+    .seventhdiv{
+        margin-top: 2200px;
+    }
+    .seventhleft, .seventhright{
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    .seventhleft h1{
+        text-align: center;
+    }
+    .seventhleft p{
+        text-align: justify;
+    }
+    .seventhright{
+        margin-top: 10px;
+    }
+    .boxcontainer{
+        width: 100%;
+        display: block;
+    }
+    .how-to-box{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .sixthdiv{
+        margin-top: 4800px;
+    }
+    .paymentsupdateleft{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+}
+
+
+
+
+
+/* The Eight Division of the Website */
+
+.eightdiv{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 4700px;
+    background-color: var(--black3);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.eightleft{
+    width: 45%;
+    margin-left: 5%;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--tertiary-color);
+}
+.eightright{
+    width: 45%;
+    margin-left: 5%;
+}
+.reviews{
+    width: 80%;
+    margin: 0 10%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.reviews .image{
+    width: 20%;
+    display: inline-block;
+    margin-top: 10px;
+}
+.reviews .image img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+}
+.reviews .nameposition{
+    width: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.eighttop {
+    display: flex;
+}
+.eighttop h3{
+    color: var(--tertiary-color);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+.eighttop p{
+    color: var(--tertiary-color);
+    margin: 0;
+}
+.starsposition{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.fa-star{
+    color: #F7C731;
+
+}
+.reviewcontent{
+    padding: 20px;
+    color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.reviewcontent p{
+    margin-top: 0;
+}
+.show-more-review{
+    background-color: transparent;
+    border: 2px solid var(--tertiary-color);
+    outline: none;
+    color: var(--tertiary-color);
+    padding:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width:705px){
+    .eightdiv{
+        margin-top: 9000px;
+        display: block;
+
+    }
+    .eightleft{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .eightleft h1{
+        font-size: 20px;
+    }
+    .eightright{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .eightright h3{
+        font-size: 15px;
+
+    }
+    .reviews{
+        width: 90%;
+        margin:0;
+
+    }
+}
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .eightdiv{
+        margin-top: 5000px;
+        display: none;
+        
+    }
+    .sixthdiv{
+        margin-top: 5200px;
+    }
+    .nightdiv{
+        margin-top: 8000px;
+    }
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+.nightdiv{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 5100px;
+    background-color: var(--black);
+}  
+.accordion-container{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-left{
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    
+}
+
+#accordion{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    transition: 0.6s;
+}
+#accordion::after{
+    content: "\002B";
+    margin-left: 50px;
+}
+#accordion-content{
+    background-color: var(--input-back);
+    color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
+    display: none;
+    transition: 0.6s;
+}
+.active-accordion{
+    background-color: var(--primary-color);
+}
+.active-accordion::after{
+    content: "\2212";
+}
+
+
+@media screen and (max-width:705px){
+    .nightdiv{
+        margin-top: 9600px;
+    }
+    .accordion-left, .accordion-right{
+        width: 100%;
+    }
+    .accordion-container{
+        display: block;
+    }
+}
+
+@media (min-width:705px){
+    .mobilehero{
+        display: none;
+    }
+}
+
+.gototop a{
+padding: 15px;
+width: 50px;
+background-color: var(--primary-color);
+color: var(--tertiary-color);
+font-size: 20px;
+position: fixed;
+bottom: 0;
+right: 0;
+border-radius: 50%;
+text-align: center;
+margin-bottom: 50px;
+margin-right: 15px;
+cursor: pointer;
+z-index: 5px;
+
+}
+.gototop2 a{
+    padding: 15px;
+width: 50px;
+background-color: var(--primary-color);
+color: var(--tertiary-color);
+font-size: 20px;
+position: fixed;
+bottom: 0;
+right: 0;
+border-radius: 50%;
+text-align: center;
+margin-bottom: 50px;
+margin-right: 15px;
+cursor: pointer;
+z-index: 5px;
+}
+.fa-arrow-down{
+    display: block;
+}
+/* sticky header effect */
+
+.sticky-header{
+    background-color: var(--black);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+}
+
+/* footer properties and styling */
+
+.underline{
+    width: 25%;
+    height: 5px;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.col1 li{
+    color: var(--tertiary-color);
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    cursor: pointer;
+}
+.col1 li:hover{
+    color: var(--primary-color);
+}
+
+.col1 h2{
+    margin-bottom: 0;
+    color: var(--tertiary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+.col1 p{
+    color: var(--tertiary-color);
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.col1:first-child{
+    width: 25%;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    background-color: var(--second-black);
+}
+
+.col1{
+    width: 15%;
+    
+}
+@media (max-width:705px){
+    footer{
+        display: block;
+        
+    }
+    .col1{
+        width: 100%;
+        text-align: center;
+    }
+    .col1:first-child{
+        width: 100%;
+        margin: 0;
+    }
+    .col1 h2{
+        text-align: left;
+        /* margin-left: 100px; */
+    }
+    .copyright{
+        margin-top: 30px;
+    }
+}
+@media(min-width:705px){
+    footer{
+        display: flex;
+        
+    }
+    .copyright p{
+        margin-left: 20px;
+    }
+    
+}
+
+.footer-icon{
+    color: var(--primary-color);
+    font-size: 20px;
+    background-color: var(--tertiary-color);
+    padding: 15px;
+}
+.copyright{
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    margin-top: 30px;
+    padding: 15px;
+}
+.copyright p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--tertiary-color);
+    font-size: 15px;
+}
+.copyright a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+
+/* Modal Pop Up for Sign Up */
+
+.demoform{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    background-color: var(--black-new);
+    left: 0;
+    z-index: 500;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    display: none;
+    -webkit-animation-name: flyboy;
+    animation-name: flyboy;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+
+    
+}
+.demoform, ::-webkit-scrollbar{
+   display: none;
+}
+@keyframes flyboy{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@media (min-width:705px){
+    
+}
+
+
+.modal-content{
+        width: 50%;
+        background-color: var(--tertiary-color);
+        margin:  0 auto;
+        padding: 20px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        display: block;
+        overflow-x: hidden;
+        
+    }
+
+    .modal-content h1{
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .modal-content label{
+        color: black;
+        margin-bottom: 15px;
+    }
+    .modal-content input{
+        margin-top: 15px;
+        width: 90%;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .modal-content input:focus{
+        outline: 0;
+        border: 2px solid var(--primary-color);
+    }
+    .modal-content select{
+        margin-top: 15px;
+        width: 90%;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .modal-content select:focus{
+        outline: 0;
+        border: 2px solid var(--primary-color);
+    }
+    .modal-content .close{
+       float: right;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .modal-content .close:hover{
+        color: var(--primary-color);
+      }
+      .modal-content button{
+        width: 50%;
+        padding: 15px;
+        border: 0;
+        outline: 0;
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .modal-content h3{
+        text-align: right;
+        color: var(--primary-color);
+        margin-top: 0;
+        cursor: pointer;
+        margin-bottom: 0;
+      }
+      
+      #toggle-sign-up-form{
+        display: none;
+      }
+
+      .the-log-in-form-container{
+        display: absolute;
+        z-index: 5;
+        width: 100%;
+      }
+      #demoinvest{
+        display: block;
+         animation: slide 0.6s;
+        -webkit-animation: slide 0.6s;
+        background-color: var(--tertiary-color);
+      }
+      #login-form{
+        display: none;
+        animation: slide 0.6s;
+        -webkit-animation: slide 0.6s;
+        background-color: var(--tertiary-color);
+      }
+@keyframes slide{
+    from{
+            transform: translateX(100%);
+    }
+    to {
+            transform: translateX(0);
+    }
+}
+
+
+
+      .modal-form-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+
+
+
+      /* Form Errors for validation */
+
+      .formerror1{
+        display:none;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        padding: 5px;
+        background-color: rgba(255, 0, 0, 0.418);
+        border-left: 5px solid red;
+        color: var(--black);
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+      }
+      .formerror1 .closeerror{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        float: right;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .fa-bounce{
+        animation-iteration-count: 2;
+      }
+
+      .formerror2{
+
+        display:none;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        padding: 5px;
+        background-color: rgba(255, 255, 0, 0.603);
+        border-left: 5px solid yellow;
+        color: var(--black);
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+
+      }
+
+
+      .formerror3{
+
+        display:none;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        padding: 5px;
+        background-color: rgba(0, 128, 0, 0.479);
+        border-left: 5px solid green;
+        color: var(--tertiary-color);
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+
+      }
+
+
+      .formerror3 .closeerror{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        float: right;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .formerror2 #snote{
+        font-size: 10px;
+      }
+      .formerror2 .closeerror{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        float: right;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+
+    /* Login Button */
+      #getstorage{
+      display: none;}
+      
+
+    
+    
