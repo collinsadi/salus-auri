@@ -2002,7 +2002,7 @@ footer{
         margin-bottom: 15px;
         font-size: 15px;
     }
-    .modal-content input:focus{
+    .modal-content input[type=text]:focus{
         outline: 0;
         border: 2px solid var(--primary-color);
     }
@@ -2178,8 +2178,118 @@ footer{
 
     }   
     
-
-      
-
+/* .to-validate, .to-validate2, .to-validate1{
+    border: 0;
+    outline: 0;
+}  
+.to-validate:focus, .to-validate2:focus, .to-validate1:focus{
+    border: 0;
+    outline: 0;
+} */
     
+ .password-container{
+    margin-top: 15px;
+    width: 90%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    /* outline: 2px solid gray; */
+ }  
+ .password-container input{
+    width: 90%;
+ }
+ .password-container #confirmpassword{
+    width: 100%;
+ }
+ .password-toggler{
+    width: 10%;
+    cursor: pointer;
+    margin-left: 10px;
+ } 
+ .password-toggler img{
+    width: 100%;
+ }
+ 
+/* #toggle-icon{
+animation: password 0.6s;
+-webkit-animation: password 0.6s;
+}
+
+@keyframes password{
+From{
+    opacity: 0;    
+}
+to {
+    opacity: 1;
+}
+} */
+
+
+
+
+.formerror4{
+    display:none;
+       
+        width: 80%;
+        padding: 5px;
+        background-color: rgba(255, 0, 0, 0.452);
+        border-left: 5px solid red;
+        color: black;
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+}
+
+.formerror5{
+    display:none;
+       
+        width: 80%;
+        padding: 5px;
+        background-color: rgba(255, 0, 0, 0.452);
+        border-left: 5px solid red;
+        color: black;
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+}
+
+#upload-image-label{
+
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--tertiary-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
     
+
+}
+
+.modal-content input[type=file]{
+    display: none;
+}
+
+.image-upload-field{
+    width: 100%;
+}
+.image-upload-field .image-box{
+    width: 50%;
+}
+.image-box img{
+width: 100%;
+}
+#uploaded-image{
+width: 50%;
+border-radius: 50%;
+height: 290px;
+}
+
+@media (max-width:705px){
+#uploaded-image{
+    height: 239px;
+    width: 80%;
+}
+}
