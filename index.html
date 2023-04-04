@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="modules/all.css">
         <link rel="stylesheet" type="text/css" href="modules/style.css">
         <title> Salus Auri </title>
+
+
+
+
     </head>
     <body>
         
@@ -440,7 +444,7 @@
                             <label for="selectplan"> Choose Plan </label><br><br>
 
 
-                            <select name="plan" id="selectplan">
+                            <select name="plan" onchange="calculateprofit()" id="selectplan">
                                 <option value="Silver Plan">Silver Plan</option>
                                 <option value="Diamond Plan">Diamond Plan</option>
                                 <option value="Platinum Plan">Platinum Plan</option>
@@ -450,7 +454,7 @@
                         <div class="calculatortopright">
                             <br>
                             <label for="investamount"> Invest Amount</label><br><br>
-                            <input type="text" placeholder="0.00" id="investamount">
+                            <input type="text" placeholder="0.00" onkeydown="calculateprofit()"  id="investamount">
                         </div>
 
 
@@ -460,7 +464,7 @@
                             <input type="text" placeholder="0.00" id="profitamount" disabled> <br><br> 
                     </form>
                     
-                    <button id="calculate" onclick="calculateprofit()"> Calculate Your Profit</button>
+                    <!-- <button id="calculate" onclick="calculateprofit()"> Calculate Your Profit</button> -->
                 </div>
             </div>
 
@@ -685,6 +689,9 @@
         <div class="the-log-in-form-container">
             <form id="login-form" class="log-in-form">
 
+
+                <!-- After Sign Up Alert -->
+
                 <div class="formerror3 fa-bounce">
                     <p id="therror">Login With The Details You Filled Earlier </p>
                     <span class="closeerror" id="close">&times;</span>
@@ -692,10 +699,29 @@
                 
                 <label for="email2"> Email</label><br>
                 <input type="Enail" placeholder="enter your Email" id="email-to-log-in" required><br>
-    
+
+
+
+                
+
+
                 <label for="password"> Password</label><br>
-                <input type="password" placeholder="Input Password" id="password2" required><br>
-    
+                <div class="password-container">
+
+
+                    <!-- Monkey Image for Password Toggle -->
+
+                <div class="password-toggler"  id="password-togger">                  
+                    <img src="images/password-toggle.png" id="toggle-icon" alt="">                    
+                </div>
+
+
+
+
+                    
+                <input type="password" placeholder="Input Password" id="password2" class="to-validate" required><br>
+                
+                </div>
     
             </form>
             <button id="getstorage" onclick="checkingLogIn()" > Login </button>
@@ -707,16 +733,27 @@
 
 
 
-        <form action="" id="demoinvest" onsubmit="return checkvalidation()">
+        <form action="" id="demoinvest">
             <label for="firstName"> First Name </label><br>
-            <input type="text" placeholder="Your Legal First Name Here" id="firstName" required><br>
+            <input type="text"  onkeydown="validatingname()" placeholder="Your Legal First Name Here" id="firstName" required     title="You Would be Adressed by your first Name in your Dashboard and Emails"  ><br>
 
 
             <label for="lastName"> Last Name </label><br>
-            <input type="text" placeholder="Your Legal Last Name Here" id="lastName" required><br>
+            <input type="text" onkeyup="validatingname()" placeholder="Your Legal Last Name Here" id="lastName" required><br>
+
+                    <div class="formerror5 fa-bounce">
+                        <p id="therror">First and Last Name are Required</p>
+                </div>
 
             <label for="email"> Email</label><br>
-            <input type="Enail" placeholder="enter your Email" id="Email" required><br>
+            <input type="Enail"  onkeyup="validatingemail()" placeholder="enter your Email" id="Email" required><br>
+
+                <!-- Email Not Valid error -->
+
+                <div class="formerror4 fa-bounce">
+                    <p id="therror">Enter a Valid Email</p>
+            </div>
+
 
 
             <label for="investmentpackage"> Select Plan </label><br>
@@ -724,11 +761,40 @@
                 <option value="Silver Plan"> Silver Plan</option>
                 <option value="Diamond Plan"> Diamond Plan</option>
                 <option value="Platinum Plan"> Platinum Plan</option>
-            </select><br>
+            </select><br><br><br>
+
+
+
+
+                <div class="image-up-load-field">
+
+                            <div class="image-box">
+                                <img src="images/img_avatar2.png" id="uploaded-image" alt="">
+                            </div>
+
+                    
+                            <label for="upload-image" id="upload-image-label">  Upload a Profile Image </label><br><br><br>
+                            <input type="file" name="file" id="upload-image" accept="image/jpeg, image/png">
+                </div>
+
+            
 
             <label for="password"> Password</label><br>
-            <input type="password" placeholder="Choose a Strong Password" id="password" required><br>
 
+
+           
+
+
+            <div class="password-container">
+
+                <!-- Monkey Image for Password Toggle -->
+
+                <div class="password-toggler"  id="password-togger">                  
+                    <img src="images/password-toggle.png" id="toggle-icon2" alt="">                    
+                </div>
+
+            <input type="password" placeholder="Choose a Strong Password" onkeyup="validatingpassword()" id="password" class="to-validate1" required  ><br>
+            </div>
 
                         <!-- Error Message for Weak Password -->
                                     <div class="formerror2 fa-bounce">
@@ -739,11 +805,15 @@
                                 </div>
 
 
-            <label for="password" onkeyup="checkvalidation()"> Confirm Password</label><br>
-            <input type="password" placeholder="Confirm Pasword" id="confirmpassword" required><br>
+                                <!-- Confim Password Field -->
 
+                    
+            <label for="password" > Confirm Password</label><br>
+            <div class="password-container">
+            <input type="password" placeholder="Confirm Pasword" id="confirmpassword"  onkeyup="validatingconfirmpassword()" class="to-validate2" required><br>
+            </div>
 
-            <!-- Form Custom Errors -->
+            <!-- Passwords Not Matching Eror -->
 
                 <div class="formerror1 fa-bounce">
                         <p id="therror">Passwords Don't Match</p>
