@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../modules/dashboard-styling.css">
+    <link rel="stylesheet" href="../modules/all.css">
+    <link rel="shortcut icon" href="../images/favicon.gif" type="image/x-icon">
+
+    <style>
+
+        
+    </style>
+
+</head>
+<body>
+    
+    <!-- side bar of the dashboard -->
+
+    <div class="sidebar">
+        <div class="side-bar-logo"></div>
+        <div class="sidebarbuttons">
+
+
+            <div class="icons-side"  id="dashboard-btn">
+                <i class="fa-solid fa-table-columns" ></i>
+                <h3>Dashboard</h3>
+            </div>
+
+            <div class="icons-side" id="wallet-btn">
+                <i class="fa-solid fa-wallet"></i>
+                <h3>wallet</h3>
+            </div>
+
+            <div class="icons-side" id="setting-btn">
+                <i class="fa-solid fa-gear" ></i>
+                <h3>Settings</h3>
+            </div>
+
+            <div class="icons-side" id="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <h3>Log Out</h3>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+        <div class="topbar">
+
+<div class="image-username-notification">
+
+<img src="" id="profile-image" alt="">
+<h3 id="username"> </h3>
+<i class="fa-regular fa-bell"></i>
+
+
+
+</div>
+
+
+
+<div class="greetingtop-time">
+
+    <h3 id="greetings"></h3>
+    <p id="timing"></p>
+
+</div>
+        </div>
+<!-- Top bar end -->
+
+
+<!-- Top Bar For Mobile Devices  -->
+
+<div class="mobile-top-bar">
+
+<div class="left-nav-icon">
+    <div class="harmburger"></div>
+    <div class="harmburger"></div>
+    <div class="harmburger"></div>
+</div>
+<div class="logo-center">
+    <h3>Salus Auri</h3>
+</div>
+<div class="profile-image" >
+    <img src="../images/img_avatar2.png" id="profile-image2" alt="">
+</div>
+
+</div>
+<!-- after the topbar for mobile -->
+<div class="after-mobile-top-bar">
+
+    <div class="name-section-mobile">
+        <h3></h3>
+    </div>
+    <div class="date-time-mobile">
+        <h3></h3>
+    </div>
+
+</div>
+
+<!-- Mobile Top Bar Ends -->
+
+
+<!-- Mobile footer -->
+
+<div class="mobile-footer">
+
+    <div class="icons-side-mobile"  id="dashboard-btn2">
+        <i class="fa-solid fa-table-columns" ></i>
+    </div>
+
+    <div class="icons-side-mobile" id="wallet-btn2">
+        <i class="fa-solid fa-wallet"></i>
+    </div>
+
+    <div class="icons-side-mobile" id="setting-btn2">
+        <i class="fa-solid fa-gear" ></i>
+    </div>
+
+    <div class="icons-side-mobile" id="logout-btn2">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </div>
+
+</div>
+
+
+<!-- Styling the dashboard section, that is the first section -->
+
+    <div id="dashboard" class="dashboard">
+
+        <div class="box-horizontal">
+
+            <div class="balances" id="addmoney">
+                <h3>Balances</h3>
+                <i class="fa-solid fa-plus-square" ></i>
+            </div>
+            <div class="currency">
+                $ Dollar
+            </div>
+            <div class="amount">
+                <h3>200</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+
+ 
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+</div>
+
+
+<div class="wallet" id="wallet">
+
+   <div class="card-virtual">
+    <div class="remaining-balancing">
+    <h3>$ 200</h3>
+    </div>
+
+    <div class="button-container">
+
+    
+
+<div class="settings" id="settings">
+
+ <div class="container">
+    <div class="top">
+             </div>
+    <div class="main-body">
+
+        <div class="passowrd-setting" id="passowrd-setting">
+            <h3>Pasword</h3>
+            <hr>
+            <div class="password-setting-body1">
+                <p>Remember to don't share your password with anyone. 
+                    Always set a password 
+                    that is not related to your name or email</p>
+
+                    <div class="change-password-button">
+                        <p>Change Password</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="deposit-setting" id="deposit-setting">
+            <h3>Payment Methods</h3>
+            <hr>
+
+            <div class="deposit-setting-body1">
+
+            <div class="crypto-wallet-bitcoin">
+
+                <h3>Bitcoin wallet Adress</h3>
+
+                <input type="text" id="bitcoinwalletadress" value="BitcoinRDC64666646466s464664646" disabled><i class="fa-regular fa-copy" onclick="copywallet()"></i>
+
+                
+                </div>
+            
+            
+                <div class="crypto-wallet-bitcoin">
+
+                    <h3>Ethereum wallet Adress</h3>
+    
+                    <input type="text" id="ethereumwalletadress" value="ethereumRDC64666646466s464664646" disabled><i class="fa-regular fa-copy" onclick="copyethwallet()"></i>
+    
+                    
+                    </div>
+
+                    <div class="crypto-wallet-bitcoin">
+
+                        <h3>Tether wallet Adress</h3>
+        
+                        <input type="text" id="tetherwalletadress" value="tetherRDC64666646466s464664646" disabled><i class="fa-regular fa-copy" onclick="copytethwallet()"></i>
+        
+                        
+                        </div>
+
+
+                    </div>
+        </div>
+
+    </div>
+ </div>
+
+
+
+    
+    
+
+</div>
+    
+        
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../modules/all.js"></script>
+<!-- <script src="../modules/app.js"></script> -->
+<script src="../modules/dashboard-scripting.js"></script>
+</body>
+</html>
