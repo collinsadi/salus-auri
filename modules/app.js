@@ -418,13 +418,18 @@ function checkingLogIn(){
     if (emailToLogIn !== validatedEmail || passwordToLogIn !== ValidatedPassword){
         alert("Incorrect Email or Password")
     }else{
-        alert("GoodBoy")
+        alert("Login sucessful you would be redirected to the dashboard")
 
-        // window.location ="https://facebook.com"
-
-        setTimeout(3000);
+        // dashboardredirect()
+        setTimeout(dashboardredirect, 4000)
+       
     };
-    
+
+     
+};
+
+function dashboardredirect(){
+    window.location = "pages/dashboard.html"
 };
 
 
@@ -489,16 +494,16 @@ function checkingLogIn(){
 
 window.onload = ()=>{
 
-    if(navigator.onLine === false && localStorage.getItem("firstName") !== null ){
-        alert( "Hello " + localStorage.getItem("firstName") +","+ " You are offline")
-    }
+    // if(navigator.onLine === false && localStorage.getItem("firstName") !== null ){
+    //     alert( "Hello " + localStorage.getItem("firstName") +","+ " You are offline")
+    // }
 
         
-    if(localStorage.getItem("firstName") === null && navigator.onLine === false){
+    // if(localStorage.getItem("firstName") === null && navigator.onLine === false){
 
-            alert("Hello, You are offline")
+    //         alert("Hello, You are offline")
 
-        }
+    //     }
     // } else{alert("Welcome Back " + localStorage.getItem("firstName"))}
 
 }
